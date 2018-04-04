@@ -6,7 +6,7 @@
 
 body{
 	background-color: #f9f9f9;
-	font-family: sans-serif;
+	font-family: "Museo Sans Cyrl", sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,7 +40,7 @@ span {
 	color: #c65f2c;
 }
 
-h4 {
+.wrapper-flex-container_block_header {
 	line-height: 1em;
 	margin: 20px 0;
 	height: 35px;
@@ -50,19 +50,19 @@ h4 {
 	color: #c65f2c;
 }
 
-p {
+p:not(.wrapper-flex-container_block_header) {
 	line-height: 1.5em;
 }
 
 a {
 	text-decoration: none;
 	color: black;
-	transition: transform 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 a:hover {
 	transform: translateY(-15px);
-	transition: transform 0.5s ease-out;
 	box-shadow: 0 0 50px 3px #ddd;
+
 }	
 
 @media screen and (max-width: 850px) {
